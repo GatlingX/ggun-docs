@@ -3,27 +3,27 @@ import { useRouter } from 'next/router'
 
 export default {
     logo: <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
-            ♨️ Kalamari API Documentation
+            ♨️ Kalamari Documentation
         </span>,
     project: {
       link: 'https://github.com/Sentou-Technologies/Sentou-SDK-Issues/issues'
     },
-    docsRepositoryBase: 'https://github.com/Sentou-Technologies/kalmari-api',
+    docsRepositoryBase: 'https://github.com/Sentou-Technologies/kalamari-docs',
     useNextSeoProps(){
         const { asPath } = useRouter()
         if (asPath !== '/') {
             return {
-                titleTemplate: '%s | Kalmari API'
+                titleTemplate: '%s | Kalmari Docs'
             }
         }
         return {
-            titleTemplate: 'Kalmari API Documentation',
-            description: 'Explore the comprehensive documentation for the Kalmari API to integrate our solutions seamlessly.',
+            titleTemplate: 'Kalmari Documentation',
+            description: 'Explore the comprehensive documentation for the Kalmari to integrate our solutions seamlessly.',
             openGraph: {
                 type: 'website',
                 locale: 'en_US',
                 url: 'https://kalmari.com', // TODO: Need change
-                site_name: 'Kalmari API',
+                site_name: 'Kalmari Docs',
             }
         }
     } ,
@@ -31,7 +31,7 @@ export default {
         <>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta property="og:title" content="Kalamari" />
-          <meta property="og:description" content="The API for the Kalmari API" />
+          <meta property="og:description" content="The Docs for the Kalmari Tool" />
         </>
     ),
     chat: {

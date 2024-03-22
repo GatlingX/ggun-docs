@@ -1,8 +1,0 @@
-{
-    "fuzz": " Running the Fuzzer",
-    "status": "List of Fuzzing Status",
-    "deploy_codebase": "Deploy Codebase",    
-    "send_codebase_diff": "Send Codebase Git Diff",
-    "deploy_contract": "Deploy Contract"
-}
-

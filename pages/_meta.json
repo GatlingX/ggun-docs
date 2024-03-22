@@ -4,6 +4,13 @@
     },
     "quick_start": "Quick Start",
     "contact": "Contact Us",
+    "fuzzing_api": {
+        "title": "Fuzzing REST API"
+    },
+    "gpuevm": {
+        "title": "GPU-EVM REST API",
+        "display": "hidden"
+    },
     "company": {
         "title": "♨️ Company",
         "type": "menu",

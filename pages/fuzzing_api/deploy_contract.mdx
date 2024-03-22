@@ -1,0 +1,57 @@
+# Deploy Source Contract (POST)
+
+`POST https://api.sentou.ai/sentou-evm/contracts`
+
+Deploy a solidity contract to Kalamari
+
+#### Request
+This endpoint expects an object with the following fields:
+- **sourceCode**: string (Required)
+- **calldata**: string (Required)
+- **env**: object (Optional)
+  - **address**: string (Optional)
+  - **balances**: list of integers (Optional)
+  - **origin**: string (Optional)
+  - **caller**: string (Optional)
+  - **callValue**: integer (Optional)
+  - **gasPrice**: integer (Optional)
+  - **blockhash**: string (Optional)
+  - **coinbase**: string (Optional)
+  - **timestamp**: integer (Optional)
+  - **blockNumber**: integer (Optional)
+  - **prevRandao**: string (Optional)
+  - **chainId**: integer (Optional)
+  - **baseFee**: integer (Optional)
+
+#### Response
+This endpoint returns an object with the following fields:
+- **address**: string
+- **balance**: integer
+- **status**: string
+- **txHash**: string
+- **gasUsed**: integer
+
+
+### Examples
+
+```sh curl copy filename="POST /sentou-evm/contracts"
+curl -X POST https://api.sentou.ai/sentou-evm/contracts \
+     -H "X_API_KEY: <ApiKey>" \
+     -H "Content-Type: application/json" \
+     -d '{
+  "sourceCode": "string",
+  "calldata": "string"
+}'
+```
+
+```sh curl copy filename="RESPONSE"
+
+{
+  "address": "string",
+  "balance": 0,
+  "status": "string",
+  "txHash": "string",
+  "gasUsed": 0
+}
+```
+

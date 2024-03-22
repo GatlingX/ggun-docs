@@ -1,0 +1,35 @@
+# List Contracts (GET)
+
+`GET https://api.sentou.ai/sentou-evm/contracts`
+
+List deployed contracts
+
+#### Request
+This endpoint does not require any request body.
+
+#### Response
+This endpoint returns an object containing a list of contracts. Each contract object includes the following fields:
+- **address**: string
+- **deployedBlockNumber**: integer
+- **creator**: string
+- **balance**: integer
+
+### Examples
+
+```sh curl copy filename="POST /sentou-evm/contracts"
+curl https://api.sentou.ai/sentou-evm/contracts \
+     -H "X_API_KEY: <ApiKey>"
+```
+
+```sh curl copy filename="RESPONSE"
+{
+  "contracts": [
+    {
+      "address": "string",
+      "deployedBlockNumber": 0,
+      "creator": "string",
+      "balance": 0
+    }
+  ]
+}
+```

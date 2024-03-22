@@ -1,0 +1,59 @@
+# Parallel Execute EVM (POST)
+
+
+`POST https://api.sentou.ai/sentou-evm/parallel-evm`
+
+Execute a contract in parallel with a specified environment
+
+#### Request
+This endpoint expects an object with the following fields:
+- **address**: string (Required)
+- **calldataList**: list of strings (Required)
+- **env**: object (Required)
+  - **address**: string (Optional)
+  - **balances**: list of integers (Optional)
+  - **origin**: string (Optional)
+  - **caller**: string (Optional)
+  - **callValue**: integer (Optional)
+  - **gasPrice**: integer (Optional)
+  - **blockhash**: string (Optional)
+  - **coinbase**: string (Optional)
+  - **timestamp**: integer (Optional)
+  - **blockNumber**: integer (Optional)
+  - **prevRandao**: string (Optional)
+  - **chainId**: integer (Optional)
+  - **baseFee**: integer (Optional)
+
+#### Response
+This endpoint returns an object with the following fields:
+- **responses**: list of strings
+- **statuses**: list of strings
+
+### Examples
+
+
+```sh curl copy filename="POST /sentou-evm/parallel-evm"
+curl -X POST https://api.sentou.ai/sentou-evm/parallel-evm \
+     -H "X_API_KEY: <ApiKey>" \
+     -H "Content-Type: application/json" \
+     -d '{
+  "address": "string",
+  "calldataList": [
+    "string"
+  ],
+  "env": {}
+}'
+```
+
+
+```sh curl copy filename="RESPONSE"
+
+{
+  "responses": [
+    "string"
+  ],
+  "statuses": [
+    "string"
+  ]
+}
+```

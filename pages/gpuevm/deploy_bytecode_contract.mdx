@@ -1,0 +1,72 @@
+# Deploy Bytecode Contract (POST)
+
+`POST https://api.sentou.ai/sentou-evm/contracts/bytecode`
+
+Deploy a bytecode contract to GPU-EVM
+
+#### Request
+This endpoint expects an object with the following fields:
+- **bytecode**: string (Required)
+- **abi**: object (Required)
+  - **inputs**: list of strings (Required)
+  - **name**: string (Required)
+  - **stateMutability**: string (Required)
+  - **type**: string (Required)
+  - **outputs**: map from strings to strings (Required)
+- **calldata**: string (Required)
+- **env**: object (Optional)
+  - **address**: string (Optional)
+  - **balances**: list of integers (Optional)
+  - **origin**: string (Optional)
+  - **caller**: string (Optional)
+  - **callValue**: integer (Optional)
+  - **gasPrice**: integer (Optional)
+  - **blockhash**: string (Optional)
+  - **coinbase**: string (Optional)
+  - **timestamp**: integer (Optional)
+  - **blockNumber**: integer (Optional)
+  - **prevRandao**: string (Optional)
+  - **chainId**: integer (Optional)
+  - **baseFee**: integer (Optional)
+
+#### Response
+This endpoint returns an object with the following fields:
+- **address**: string
+- **balance**: integer
+- **status**: string
+- **txHash**: string
+- **gasUsed**: integer
+
+
+### Examples
+
+```sh curl copy filename="POST /sentou-evm/contracts/bytecode"
+curl -X POST https://api.sentou.ai/sentou-evm/contracts/bytecode \
+     -H "X_API_KEY: <ApiKey>" \
+     -H "Content-Type: application/json" \
+     -d '{
+  "bytecode": "string",
+  "abi": {
+    "inputs": [
+      "string"
+    ],
+    "name": "string",
+    "stateMutability": "string",
+    "type": "string",
+    "outputs": {
+      "string": "string"
+    }
+  },
+  "calldata": "string"
+}'
+```
+
+```sh curl copy filename="RESPONSE"
+{
+  "address": "string",
+  "balance": 0,
+  "status": "string",
+  "txHash": "string",
+  "gasUsed": 0
+}
+```

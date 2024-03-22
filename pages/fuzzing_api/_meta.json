@@ -1,0 +1,8 @@
+{
+    "fuzz": "Fuzzing (POST)",
+    "deploy_codebase": "Deploy Codebase (POST)",    
+    "send_codebase_diff": "Send Codebase Git Diff (POST)",
+    "deploy_contract": "Deploy Contract (POST)",
+    "status": "Fuzzing Status (GET)"
+}
+

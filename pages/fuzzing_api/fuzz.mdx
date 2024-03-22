@@ -1,0 +1,47 @@
+# Fuzzing (POST)
+
+`POST https://api.sentou.ai/sentou-evm/fuzz`
+
+Fuzz a contract with a specified mutator
+
+
+#### Request
+This endpoint expects an object.
+- **address**: string (Required)
+- **mutatorType**: string (Required)
+- **initSeed**: string (Required)
+- **config**: any (Optional)
+
+#### Response
+This endpoint returns an object
+- **status**: string
+- **coverage**: set of strings
+- **assertionFailures**: integer
+- **logs**: list of strings
+
+
+### Examples
+
+```sh curl copy filename="POST /sentou-evm/fuzz"
+curl -X POST https://api.sentou.ai/sentou-evm/fuzz \
+     -H "X_API_KEY: <ApiKey>" \
+     -H "Content-Type: application/json" \
+     -d '{
+  "address": "string",
+  "mutatorType": "string",
+  "initSeed": "string"
+}'
+```
+
+```sh curl copy filename="RESPONSE"
+{
+  "status": "string",
+  "coverage": [
+    "string"
+  ],
+  "assertionFailures": 0,
+  "logs": [
+    "string"
+  ]
+}
+```

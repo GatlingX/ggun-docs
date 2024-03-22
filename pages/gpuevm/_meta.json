@@ -1,0 +1,8 @@
+{
+    "deploy_bytecode_contract": "Deploy Bytecode Contract (POST)",
+    "deploy_src_contract": "Deploy Source Contract (POST)",
+    "execute_contract": "Parallel Execute EVM (POST)",
+    "get_contract": "Get Contract Info (GET)",
+    "list_contracts": "List Contracts (GET)"
+}
+

@@ -1,0 +1,44 @@
+import { Tabs } from 'nextra/components'
+import { Steps } from 'nextra/components'
+import { FileTree } from 'nextra/components'
+
+
+
+# Quick Start
+
+<Steps>
+### Step 1
+
+Install the Kalamari CLI
+
+<Tabs items={['pip']}>
+    <Tabs.Tab>
+        ```sh pip
+        pip install kalmari-cli
+        ```
+    </Tabs.Tab>
+</Tabs>
+
+### Step 2
+
+Get a Kalamari API key from the [Kalamari website](https://kalamari.com).
+
+### Step 3
+
+Run the Kalamari CLI on a foundry project.
+
+<FileTree>
+  <FileTree.Folder name="pages" defaultOpen>
+    <FileTree.File name="_meta.json" />
+    <FileTree.File name="contact.md" />
+    <FileTree.File name="index.mdx" />
+    <FileTree.Folder name="about">
+      <FileTree.File name="_meta.json" />
+      <FileTree.File name="legal.md" />
+      <FileTree.File name="index.mdx" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+
+</Steps>
+

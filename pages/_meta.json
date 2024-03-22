@@ -1,0 +1,38 @@
+{
+    "index": {
+        "title": "What's Kalmari?"
+    },
+    "quick_start": "Quick Start",
+    "contact": "Contact Us",
+    "company": {
+        "title": "♨️ Company",
+        "type": "menu",
+        "items": {
+            "about": {
+              "title": "About",
+              "href": "/about"
+            },
+            "contact": {
+              "title": "Contact Us",
+              "href": "mailto:eito@sentou.tech"
+            }
+        }
+    },
+    "get_api_key": {
+        "title": "🔑 Get API Key",
+        "type": "page",
+        "href": ""
+    },
+    "report_bug": {
+        "title": "🐛 Report Bug",
+        "type": "page",
+        "href": "https://github.com/Sentou-Technologies/Sentou-SDK-Issues/issues",
+        "newWindow": true
+    },
+    "github_link": {
+        "title": "Report an Issue (Github)",
+        "href": "https://github.com/Sentou-Technologies/Sentou-SDK-Issues",
+        "newWindow": true
+    }
+}
+

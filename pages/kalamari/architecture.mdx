@@ -1,0 +1,31 @@
+# Architecture
+
+
+```mermaid
+graph TD;
+
+subgraph AA [Client Side Foundry Project]
+A[Kalamari CLI];
+D[(Foundry Project X)];
+end
+
+subgraph BB [Server Side]
+E[Kalamari Fuzzer];
+F[Kalamari Foundry];
+G[(Copy of Foundry Project X)];
+end
+
+Z["Fuzzing (POST)"];
+
+
+A --> Z;
+A --> D;
+D --> Z;
+
+Z --> G & F --> E;
+
+
+
+
+```
+

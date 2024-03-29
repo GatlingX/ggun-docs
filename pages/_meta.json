@@ -4,6 +4,9 @@
     },
     "quick_start": "Quick Start",
     "contact": "Contact Us",
+    "kalamari": {
+        "title": "Kalamari CLI"
+    },
     "fuzzing_api": {
         "title": "Kalamari REST API"
     },

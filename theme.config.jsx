@@ -13,17 +13,17 @@ export default {
         const { asPath } = useRouter()
         if (asPath !== '/') {
             return {
-                titleTemplate: '%s | Kalmari Docs'
+                titleTemplate: '%s | Kalamari Docs'
             }
         }
         return {
-            titleTemplate: 'Kalmari Documentation',
-            description: 'Explore the comprehensive documentation for the Kalmari to integrate our solutions seamlessly.',
+            titleTemplate: 'Kalamari Documentation',
+            description: 'Explore the comprehensive documentation for the Kalamari to integrate our solutions seamlessly.',
             openGraph: {
                 type: 'website',
                 locale: 'en_US',
-                url: 'https://kalmari.com', // TODO: Need change
-                site_name: 'Kalmari Docs',
+                url: 'https://kalamari.com', // TODO: Need change
+                site_name: 'Kalamari Docs',
             }
         }
     } ,
@@ -31,7 +31,7 @@ export default {
         <>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta property="og:title" content="Kalamari" />
-          <meta property="og:description" content="The Docs for the Kalmari Tool" />
+          <meta property="og:description" content="The Docs for the Kalamari Tool" />
         </>
     ),
     chat: {

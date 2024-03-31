@@ -1,14 +1,15 @@
 {
     "index": {
-        "title": "What's Kalamari?"
+        "title": "What's Gatling Gun?"
     },
     "quick_start": "Quick Start",
     "contact": "Contact Us",
-    "kalamari": {
-        "title": "Kalamari CLI"
+    "ggun": {
+        "title": "Gatling Gun CLI"
     },
     "fuzzing_api": {
-        "title": "Kalamari REST API"
+        "title": "Gatling Gun REST API",
+        "display": "hidden"
     },
     "gpuevm": {
         "title": "GPU-EVM REST API",
@@ -24,7 +25,7 @@
             },
             "contact": {
               "title": "Contact Us",
-              "href": "mailto:eito@sentou.tech"
+              "href": "mailto:hello@sentou.tech"
             }
         }
     },

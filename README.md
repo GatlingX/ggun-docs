@@ -1,4 +1,4 @@
-# Kalamari Documentation
+# Gatling Gun Documentation
 
 <p align="center">
   <img src="https://github.com/Sentou-Technologies/Sentou-SDK-Issues/assets/38335479/91a3298a-fcca-4ce5-9dd5-efa0b5547e94" alt="2" width="400">
@@ -22,11 +22,11 @@ Look at https://nextra.site/docs/guide/markdown to see how to write markdown fil
 
 ## ♨️ Next Steps 
 
-- [ ] Update the `url` in `theme.config.jsx` to the correct Kalamari API documentation site.
+- [ ] Update the `url` in `theme.config.jsx` to the correct Gatling Gun API documentation site.
 - [ ] Review and finalize the `_meta.json` structure for navigation consistency.
 - [ ] Work further on SEO in `theme.config.jsx`, which is based on NextSEO https://github.com/garmeeh/next-seo#add-seo-to-page
 
 ## ♨️ Community
 
-Join our [Telegram Community](https://t.me/sentoutech)! We are here to answer questions and help you get the most out of Kalamari.
+Join our [Telegram Community](https://t.me/sentoutech)! We are here to answer questions and help you get the most out of Gatling Gun.
 

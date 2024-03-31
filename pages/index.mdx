@@ -1,24 +1,24 @@
 import { Callout } from 'nextra/components'
 
-# Welcome to Kalamari Documentation!
+# Welcome to the `ggun` (Gatling Gun) Documentation!
 
 <Callout type="warning" emoji="⚠️">
-  Kalamari is still in closed alpha. There may be some stability issues and changes to the API.
+  Gatling Gun is still in closed alpha. There may be some stability issues and changes to the API.
 </Callout>
 
 
-This documentation provides a comprehensive guide for using the Kalamari API to integrate our solutions seamlessly.
+This documentation provides a comprehensive guide for using the Gatling Gun API to integrate our solutions seamlessly.
 
-## What's Kalamari?
+## What's Gatling Gun?
 
-Kalamari is an upgraded fork of [Foundry](https://book.getfoundry.sh/forge/) a command-line tool that tests, builds, and deploys your smart contracts. 
+Gatling Gun is an upgraded fork of [Foundry](https://book.getfoundry.sh/forge/) a command-line tool that tests, builds, and deploys your smart contracts. 
 
-It uses a different backend fuzzer to Foundry, and is designed to work with the Kalamari API.
+It uses a different backend fuzzer to Foundry, and is designed to work with the Gatling Gun API.
 
-You can use Kalamari CLI in your foundry based projects, and it will work with the Kalamari API. In particular, running `kalamari test` should yield exactly the same results.
+You can use Gatling Gun CLI in your foundry based projects, and it will work with the Gatling Gun API. In particular, running `ggun test` should yield exactly the same results.
 
 ```sh test copy
-$ kalamari test
+$ ggun test
 No files changed, compilation skipped
 
 Ran 2 tests for test/Counter.t.sol:CounterTest
@@ -38,15 +38,15 @@ Ran 1 test suite in 15.65ms (15.15ms CPU time): 2 tests passed, 0 failed, 0 skip
 graph TD;
 
 subgraph AA [Client Side Foundry Project]
-A[Kalamari CLI];
+A[Gatling Gun CLI];
 end
 
 subgraph BB [Server Side]
-E[Kalamari Fuzzer];
-F[Kalamari Foundry];
+E[Gatling Gun Fuzzer];
+F[Gatling Gun Foundry];
 end
 
-Z[Kalamari API];
+Z[Gatling Gun API];
 A --> Z;
 Z --> F;
 F --> E;
@@ -55,8 +55,8 @@ F --> E;
 ## 🔑 Get API Key
 
 <Callout type="info" emoji="ℹ️">
-  You need an API key to use Kalamari.
+  You need an API key to use Gatling Gun.
 </Callout>
 
-To get started, you need to sign up on [Kalamari](https://kalamari.com) and get an API key.
+To get started, you need to sign up on [Gatling Gun](https://ggun.com) and get an API key.
 

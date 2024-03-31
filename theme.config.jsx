@@ -3,35 +3,35 @@ import { useRouter } from 'next/router'
 
 export default {
     logo: <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
-            ♨️ Kalamari Documentation
+            ♨️ Gatling Gun Documentation
         </span>,
     project: {
       link: 'https://github.com/Sentou-Technologies/Sentou-SDK-Issues/issues'
     },
-    docsRepositoryBase: 'https://github.com/Sentou-Technologies/kalamari-docs',
+    docsRepositoryBase: 'https://github.com/Sentou-Technologies/ggun-docs',
     useNextSeoProps(){
         const { asPath } = useRouter()
         if (asPath !== '/') {
             return {
-                titleTemplate: '%s | Kalamari Docs'
+                titleTemplate: '%s | Gatling Gun Docs'
             }
         }
         return {
-            titleTemplate: 'Kalamari Documentation',
-            description: 'Explore the comprehensive documentation for the Kalamari to integrate our solutions seamlessly.',
+            titleTemplate: 'Gatling Gun Documentation',
+            description: 'Explore the comprehensive documentation for the Gatling Gun to integrate our solutions seamlessly.',
             openGraph: {
                 type: 'website',
                 locale: 'en_US',
-                url: 'https://kalamari.com', // TODO: Need change
-                site_name: 'Kalamari Docs',
+                url: 'https://ggun.com', // TODO: Need change
+                site_name: 'Gatling Gun Docs',
             }
         }
     } ,
     head: (
         <>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta property="og:title" content="Kalamari" />
-          <meta property="og:description" content="The Docs for the Kalamari Tool" />
+          <meta property="og:title" content="Gatling Gun" />
+          <meta property="og:description" content="The Docs for the Gatling Gun Tool" />
         </>
     ),
     chat: {
@@ -49,7 +49,7 @@ export default {
         key: '2.0-release',
         text: (
           <a href="https://sentou.tech" target="_blank">
-            🎉 RELEASE: Kalamari closed alpha is released. Read more →
+            🎉 RELEASE: Gatling Gun closed alpha is released. Read more →
           </a>
         )
     }
